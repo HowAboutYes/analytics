@@ -1,0 +1,1 @@
+Select '''' || profile_id  || '''' || ',' from pit_log where pit_level = 'pit_1_5' and cast(data->>'current_hp' as integer) < 0 and date_trunc('day', start_datetime) = '2018-09-05';
